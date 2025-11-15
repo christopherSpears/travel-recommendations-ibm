@@ -2,7 +2,7 @@ const searchForm = document.getElementById('searchForm');
 
 function getRecommendations(keyword) {
 
-    return fetch('/travel_recommendation_api.json')
+    return fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
             if (keyword === "beaches") return data.beaches;
