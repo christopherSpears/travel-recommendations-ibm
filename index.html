@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background: url('/images/bg-image.jpeg') center/cover no-repeat fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">TravelBloom</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <form id="searchForm" class="d-flex justify-content-end flex-grow-1">
+                        <input id="search" class="form-control w-25" type="search"
+                            placeholder="Enter a destination or keyword">
+                        <button class="btn btn-outline-success ms-3" type="submit">Search</button>
+                        <button class="btn btn-outline-danger ms-3" type="button"
+                            onclick="document.getElementById('searchForm').reset();">Clear</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <div id="site-container" class="container-fluid"
+             style="min-height: 100vh; background-color: rgba(0,0,0,0.5);">
+
+            <div class="row min-vh-100">
+
+                <!-- SOCIAL BAR (LEFT) -->
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                    <div style="width: 2px; height: 200px; background-color: white; opacity: 0.6; margin-bottom: 20px;"></div>
+                    <a href="#" class="text-white mb-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white mb-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white mb-3"><i class="bi bi-instagram"></i></a>
+                    <div style="width: 2px; height: 200px; background-color: white; opacity: 0.6; margin-top: 20px;"></div>
+                </div>
+
+                <!-- MAIN HERO CONTENT (CENTER) -->
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-1 fw-bold text-white ms-5">
+                        EXPLORE<br>
+                        YOUR<br>
+                        DREAM<br>
+                        DESTINATION<br>
+                    </h1>
+
+                    <p class="ms-5 text-white fs-3">
+                        Explore unfamiliar territories, embrace diverse cultures and landscapes, while pursuing the desired
+                        destination that captivates the heart and ignites a sense of wonder.
+                    </p>
+
+                    <button class="btn btn-primary ms-5 w-25" type="submit">BOOK NOW</button>
+                </div>
+
+                <!-- RIGHT SIDEBAR CARDS -->
+                <div id="recommendations" class="col-12 col-md-5 d-flex flex-column gap-4 align-items-start justify-content-start mt-5">
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>
